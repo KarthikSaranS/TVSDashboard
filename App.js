@@ -1,20 +1,16 @@
 import Rack from "./Components/Rack";
 import Bin from "./Components/Bin";
+import SideBar from "./Components/SideBar";
 import Slot from "./Components/Slot";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Pages from "./Column/Pages";
 
 
 function App() {
   return (
     <div className="App">
-     
-      <Nav>
-      <h2>Tyre Company</h2>
-      </Nav>
-      <Rack />
-      <Bin />
-      <Slot />        
+      <Pages />  
     </div>
   );
 }

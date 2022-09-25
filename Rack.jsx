@@ -2,46 +2,43 @@ import React from "react";
 import styled from "styled-components";
 //import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-const arr = ["Rack 1", "Rack 2", "Rack 3", "Rack 4"]
+const arr = ["A", "B", "C", "D","E"]
 
 function Rack() {
     return (
-        <div>
-            {arr.map((x) => {
-                return (
-                <Tile>
-                    <ul>
-                        <li>
-                            <h4>{x}</h4>
-                        </li>
-                    </ul>
-                </Tile>
+        <Tile>
+            {arr.map((x)=>{
+                return(
+                    <div className="B">
+                        <span class="A">
+                            {x}
+                        </span>
+                    </div>
+                    
                 )
             })}
-        </div>
+        </Tile>
     )
 }
 
-const Tile = styled.div`
-    position: relative;
+const Tile=styled.div`
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
+    span.A{
+        text-align: center;
+        font-size: 1.75em;
 
-    ul li{
-        display: inline;
-      }
-     
-    h4{
+        height: 45px;
+        width: 45px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block; 
     }
-`;
+    .B{
+        display: inline-block;
+        padding:2rem;
+    }
 
-const Wrap = styled.div`
-    float: right;
-    padding-right: 20rem;
-`;
+`
+
 
 export default Rack

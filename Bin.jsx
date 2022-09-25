@@ -6,42 +6,32 @@ const arr = ["Bin 1", "Bin 2", "Bin 3"]
 
 function Bin() {
     return (
-        <div>
+        <Tile>
             {arr.map((x) => {
                 return (
-                <Tile>
-                    <ul>
-                        <li>
-                            <h4>{x}</h4>
-                        </li>
-                    </ul>
-                </Tile>
+                        <span class="A">
+                            {x}
+                        </span>
+                
                 )
             })}
-        </div>
+        </Tile>
     )
 }
 
 const Tile = styled.div`
-    position: relative;
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-
-    li{
-        display: inline;
-      }
-     
-    h4{
-    }
+margin: 1em 2em 1em 2em;
+padding-bottom: 1em;
+span.A{
+    display: inline;
+    font-size:1.5em;
+    color: white;
+    border-radius: 3px;
+    width: 100px;
+    height: 100px;
+    padding-right: 1.5rem;
+}
 `;
 
-const Wrapper = styled.div`
-    position: relative;
-    padding-top: 15%;
-`;
 
 export default Bin
