@@ -7,34 +7,37 @@ import styled from "styled-components";
 function Pages() {
     return (
         <div>
-            <Nav>
-                <SideBar />
-            </Nav>
-            <RightContainer>
-                <Rack />
-                <Bin />
-                <Slot />
-            </RightContainer>
+          <Grid>
+              <Nav>
+                  <SideBar />
+              </Nav>
+              <RightContainer>
+                  <Rack />
+                  <Bin />
+                  <Slot />
+              </RightContainer>
+          </Grid>
+            
         </div>
     );
+
 }
 
+const Grid = styled.div`
+display:grid;
+grid-template-columns:25% 75%;
+`;
 const Nav = styled.div`
-float: left;
-width: 20%;
   justify-content: flex-start;
   align-items: center;
   svg{
     font-size: 2rem;
   }
   text-decoration: none;
-    font-weight: 500;
-
+  font-weight: 500;
 `;
 
 const RightContainer = styled.div`
-  float: right;
-  width: 80%;
   background-color: black;
 `;
 
