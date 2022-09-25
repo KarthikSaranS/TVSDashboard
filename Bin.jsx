@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 //import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-const arr = ["Bin 1", "Bin 2", "Bin 3"]
+const arr = ["Block 1", "Block 2", "Block 3"]
 
 function Bin() {
     return (

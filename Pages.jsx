@@ -22,7 +22,6 @@ function Pages() {
 const Nav = styled.div`
 float: left;
 width: 20%;
-  padding: 0rem 0rem;
   justify-content: flex-start;
   align-items: center;
   svg{
@@ -30,6 +29,7 @@ width: 20%;
   }
   text-decoration: none;
     font-weight: 500;
+
 `;
 
 const RightContainer = styled.div`

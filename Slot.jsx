@@ -34,8 +34,8 @@ function Slot() {
 
 const Grid=styled.div`
     width:90%;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    
+    padding:1.5rem;
     margin: 1em 2em 1em 2em;
     background-color: darkgrey;
     border-radius: 10px;

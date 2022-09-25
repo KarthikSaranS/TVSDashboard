@@ -6,7 +6,7 @@ function SideBar() {
         <Bar>
         <h2>Tyre Company</h2>
         <hr />
-        <br />
+        <h4><i>Warehouse Location</i></h4>
         <h3>Info</h3>
         <h4 id="loaded">Materials Loaded Under Ageing</h4>
         <br />
@@ -27,25 +27,25 @@ const Bar = styled.div`
         background-color: yellow;
         padding: 8px;
         border-radius: 10px;
-        min-height: 3rem;
+        min-height: 2.75rem;
     }
     #completed{
         background-color:chartreuse;
         padding: 8px;
         border-radius: 10px;
-        min-height: 3rem;
+        min-height: 2.75rem;
     }
     #empty{
         background-color: grey;
         padding: 8px;
         border-radius: 10px;
-        min-height: 3rem;
+        min-height: 2.75rem;
     }
     #expired{
         background-color: red;
         padding: 8px;
         border-radius: 10px;
-        min-height: 3rem;
+        min-height: 2.75rem;
     }
 `;
 
